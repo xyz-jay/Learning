@@ -1,0 +1,18 @@
+connecting the aws in Linux
+
+wget https://pypi.python.org/packages/source/s/setuptools/setuptools-7.0.tar.gz
+
+tar xvf setuptools-7.0.tar.gz
+
+cd setuptools-7.0
+
+python setup.py install
+
+wget https://bootstrap.pypa.io/get-pip.py
+
+python get-pip.py
+
+pip install awscli
+
+aws –-version
+

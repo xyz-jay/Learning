@@ -1,0 +1,34 @@
+connecting the aws in Linux
+
+wget https://pypi.python.org/packages/source/s/setuptools/setuptools-7.0.tar.gz
+
+tar xvf setuptools-7.0.tar.gz
+
+cd setuptools-7.0
+
+python setup.py install
+
+wget https://bootstrap.pypa.io/get-pip.py
+
+python get-pip.py
+
+pip install awscli
+
+aws –-version
+
+
+Connecting AWS in windows
+
+aws ec2 describe-instances | more
+
+aws ec2 start-instances --instance-ids 
+
+
+aws s3 ls ---> List the Buckets
+aws s3 ls s3://zeedup ---> show the contents inside the buckets
+aws s3 mb s3://zeedup120 ---> Creating a Bucket
+aws s3 rb s3://zeedup120 ---> Removing a Bucket
+aws s3 cp file.txt s3://zeedup120 ----> copying the data inside the bucket
+aws s3 sync . s3://zeedup120 ---> sync the complete files in the bucket
+aws s3 ls s3://zeedup120 --recursive ---> complete information about the file
+ aws s3 cp s3://zeedup120/aws.txt . ---> This command will download the file from the bucket
